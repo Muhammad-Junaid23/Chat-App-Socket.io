@@ -13,12 +13,23 @@
 </head>
 
 <body>
-    <form>
-        <input type="text" placeholder="Your message">
-        <button>Send</button>
+    <main>
+    <form class="form-join">
+        <input type="text" id="name" maxlength="10" size="5" placeholder="Your Name" required>
+        <input type="text" id="room" size="5" placeholder="Chat Room" required>
+        <button id="join" type="submit">Join</button>
+    </form>
+  <ul class="chat-display"></ul>
+  <p class="user-list"></p>
+  <p class="room-list"></p>
+  <p class="activity"></p>
+    <form class="form-msg">
+        <input type="text" id="message" placeholder="Your message" required>
+        <button type="submit">Send</button>
     </form>
     <ul></ul>
     <p class="activity"></p>
+</main>
 </body>
 
 </html>
